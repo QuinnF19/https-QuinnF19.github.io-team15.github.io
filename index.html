@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <metachar set="utf-08">
+        <title>This is our useless site!</title>
+        <link rel="stylesheet" type="text/css" href ="style/style.css">
+    </head>
+    <body>
+    <div >
+    <h1 id="head">This is our site!</h1>
+    </div>
+    </body>
+
+
+
+<body>
+<div >
+<h4>This is the current time in Ottawa.</h4>
+</div>
+<script>
+ 
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+</head>
+<body onload="startTime()">
+ 
+<div id="txt" style="font-size: 48px"></div>
+
+
+<!++++++++++++++++++++++++++++++++++++++++++++++>
+<body>
+<div >
+<h4>Fact about you:</h4>
+You are a human.
+</div>
+</body>
+
+
+
+ 
+
+</html>

@@ -51,19 +51,18 @@ You are a human.
 </body>
 
 
+
 <head></head>
 <body>
 
 <form name="Dog Saussageness Calculator">
 <table border="1" width="600" height="200" cellpadding="5" cellspacing="3">
-<tr><th colspan="3"><h1>Dog Saussageness Calculator</h1></th></tr>
+<tr><th colspan="2"><h1>Dog Saussageness Calculator</h1></th></tr>
 <tr> <th><h3>Height</h3></th>
 <th><h3>Length</h3></th>
-<th><h3>Output</h3></th></tr>
 <tr></tr>
 <td><input type="number" name="INPUT1" id="input" onchange="calculate();"/></td>
 <td><input type="number" name="INPUT2" id="input" onchange="calculate();"/></td>
-<td><input type="number" name="OUTPUT1" id="output"></td>
 <table>
 
 </form>
@@ -75,12 +74,32 @@ var height = document.TESTING.INPUT1.value;
 var length = document.TESTING.INPUT2.value;
 var CALC = height/length;
 document.TESTING.OUTPUT1.value = CALC;
-
 }
+
+
+</script>
+<button onclick="calculate()">Get Result</button>
+<script>
 
 </script>
 </body>
 
+<body>
+
+<h3>Click here for an insporational quote!</h3>
+
+
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "You suck.";
+}
+</script>
+
+</body>
 
 
 </html>

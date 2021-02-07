@@ -1,9 +1,7 @@
 
 window.addEventListener('load', function () {
-    //alert("It's loaded!")
 
     txtfield = document.getElementById("txtfield")
-
 
     //https://www.w3schools.com/howto/howto_js_trigger_button_enter.asp
     txtfield.addEventListener("keyup", function(event) {
@@ -16,8 +14,6 @@ window.addEventListener('load', function () {
     }
   });
   })
-
-
 
 function clickbtn() {
     var x  = document.getElementById("txtfield").value;
@@ -161,89 +157,3 @@ function display(name, txt){
     }
 
 }
-
-
-//////////////////////////////Notes
-
-
-/*
-const url  = "https://api.themoviedb.org/3/search/person?api_key=0786e239a118f91a65306daa6567c1fd&query=" + x
-
-const Http = new XMLHttpRequest();
-Http.open("GET", url);
-Http.send();
-
-Http.onreadystatechange = (e) => {
-
-    console.log(Http.responseText.results)
-}
-*/
-
-
-
-
-
-
-/*
-console.log("H")
-console.log(txt.results.length)
-
-pickPerson = Math.floor(Math.random() * (txt.results.length) )
-person = txt.results[pickPerson]
-console.log(txt.results.length, pickPerson, person)
-
-//Their name
-fname = person.name
-
-//A work they were involved with
-pickWork = Math.floor(Math.random() * (person.known_for.length) )
-var work = person.known_for[pickWork].title
-console.log(person.known_for[pickWork])
-if (work == undefined) {
-    work = person.known_for[pickWork].name
-}
-var tmp = ""
-//Formatting
-switch (person.known_for[pickWork].media_type){
-    case "tv":
-        work = "the tv show \"" + work
-        break
-    case "movie":
-        work = "the movie \"" + work
-}
-console.log(person.known_for.length, pickWork, work, person.known_for.media_type)
-
-//What kind of work
-role = person.known_for_department 
-info = ""
-//Formatting
-switch (role){
-    case "Production":
-        info = "worked in production for" 
-        break
-    case "Acting":
-        info = "acted in"
-        break
-    case "Writing":
-        info = "was a writer for"
-}
-console.log(info)
-
-
-//combine information
-x  = `${fname} ${info} ${work}"`
-console.log(x)
-
-
-/*
-var a = 5;
-var b = 10;
-console.log(`Fifteen is ${a + b}.`);
-
-for (var i = 0; i < person.known_for.length; i++) {
-    console.log(person.known_for[i].title);
-    //
-
-}*/
-
-

@@ -145,7 +145,7 @@ function display(name, txt){
     txtfield = document.getElementById("txtfield")
     ansfield = document.getElementById("ansfield");
 
-    if ("undefined".search(txt) == -1 ){
+    if (txt.search("undefined") != -1 ){
         txtfield.value = "Team #15"
         ansfield.value = "The person who made this put way too much effort into it, for something that's just utterly useless";
         return

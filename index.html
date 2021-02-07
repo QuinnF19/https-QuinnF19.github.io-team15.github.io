@@ -5,6 +5,8 @@
         <metachar set="utf-08">
         <title>This is our useless site!</title>
         <link rel="stylesheet" type="text/css" href ="style/style.css">
+        
+        <script src="search_widget/search.js"></script>
     </head>
     <body>
     <div >
@@ -113,7 +115,22 @@ function myFunction() {
 }
 </script>
 
-</body>
+<!-- jess stuff -->
+<br><br>
+<form id = "search" >
+    <label>Enter what you'd like to learn a fact about:</label>
+    <br>
+    <input type = "text"  id="txtfield" value=""></input>
+    <br>
+    <textarea disabled = True id = "ansfield">the answer</textarea>
+    <br>    
+    <button type = "button" onclick = "clickbtn()">submit</button>
+
+</form>
+
+<!-- /jess stuff -->
+
+</body >
 
 
 </html>
